@@ -1,0 +1,660 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2EADF;
+    color: #1c1c1c;
+  }
+  
+  .site-header {
+    background-color: #FED1F2;
+    padding: 0.5rem 0
+  }
+
+  .header-projeto {
+    background-color: #FED1F2;
+    padding: 0.5rem 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+
+  .header-projeto .logo img {
+    height: 30px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1c1c1c;
+  }
+  
+  .btn-contato {
+    background-color: #DF48B4;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .hero {
+    background-color: #f5ecdf;
+    padding: 4rem 0;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .hero-texto {
+    flex: 1 1 50%;
+    max-width: 600px;
+  }
+  
+  .hero-texto .intro {
+    font-weight: bold;
+    color: #4e4e4e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-texto h1 {
+    font-size: 1.5rem;
+    color: #DF48B4;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-texto .subtexto {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-verde {
+    background-color: #d4f5b0;
+    color: #1c1c1c;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 2px 3px 0px #1c1c1c22;
+  }
+  
+  .hero-imagem img {
+    max-width: 280px;
+    border-radius: 16px;
+    border: 4px solid #FED1F2;
+  }
+  .sobre {
+    background-color: #CEFBA0;
+    padding: 4rem 0;
+  }
+  .sobre .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sobre p {
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+  }
+  .sobre h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1c1c1c;
+  }
+  
+  .sobre p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: center;
+    color: #1c1c1c;
+  }
+  
+  .sobre strong {
+    font-weight: 700;
+  }
+
+  .skills {
+    background-color: #f6d7fa;
+    padding: 4rem 0;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  
+  .skills h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #d12eaf;
+  }
+  
+  /* Título centralizado */
+.titulo-skills {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Container de cards */
+.cards-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Cada card */
+.card-skill {
+  flex: 1 1 300px;
+  background-color: #eb6ad2;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px; /* define altura mínima para deixá-los altos */
+}
+
+/* Lista das skills */
+.card-skill ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.card-skill li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.titulo-projetos {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+  .projetos {
+    background-color: #3829e0;
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  .projetos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #ffffff;
+  }
+  
+  .cards-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .card-projeto {
+    background-color: #f5ecdf;
+    border-radius: 24px;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .thumb-projeto {
+    width: 100%;
+    height: 120px;
+    overflow: hidden; /* mantém a imagem dentro do card */
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .thumb-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Efeito de zoom no hover */
+.card-projeto:hover .thumb-projeto img {
+  transform: scale(1.1);
+}
+
+  .info-projeto {
+    padding: 1rem;
+    color: #1c1c1c;
+  }
+  
+  .info-projeto h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .info-projeto p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .btn-projeto {
+    background-color: #eb6ad2;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .contato {
+    background-color: #e556c9;
+    padding: 4rem 0;
+    color: white;
+    position: relative;
+  }
+  
+  .contato-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .formulario {
+    max-width: 500px;
+    flex: 1 1 300px;
+  }
+  
+  .formulario h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .formulario p {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .formulario button {
+    background-color: #d4f5b0;
+    color: #1c1c1c;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .foto-contato img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .foto-contato img {
+    max-width: 380px;
+    height: auto;
+    transform: scale(1.05);
+  }
+
+  .projeto-detalhe {
+  padding: 4rem 0;
+  background-color: #f5ecdf;
+  min-height: 80vh;
+}
+
+section {
+  margin-top: 2rem; /* ou 3rem se quiser mais espaçado */
+}
+
+.projeto-detalhe h1 {
+  font-size: 2.5rem;
+  color: #d845b3;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.descricao-projeto {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.imagem-projeto {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.btn-voltar {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0;
+  padding: 0.8rem 1.5rem;
+  background-color: #d4f5b0;
+  color: #1c1c1c;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.container-projeto {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Blocos com fundos alternados */
+.fundo-1 {
+  background-color: #fff0fb;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.fundo-2 {
+  background-color: #f0f4ff;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+/* Carrossel simples */
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.carrossel img {
+  max-width: 300px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Botão para o protótipo */
+.link-prototipo {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn-prototipo {
+  background-color: #3829e0;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-prototipo:hover {
+  background-color: #291fb5;
+}
+
+.imagem-processo {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.bloco-case {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* <-- Aqui mudou */
+}
+
+.bloco-case ul {
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+
+.bloco-case ul li {
+  margin-bottom: 0.8rem; /* antes era 0.5rem, agora aumentamos */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Estilo da Modal */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close:hover {
+  transform: scale(1.2);
+  color: #ffccdd;
+}
+
+.video-direto {
+  max-width: 700px;
+  width: 100%;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.galeria-artes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.galeria-artes img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria-artes img:hover {
+  transform: scale(1.03);
+}
+
+/* Animação de Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Atualiza o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  animation: fadeIn 0.4s ease;
+}
+
+  @media (min-width: 768px) {
+    .foto-contato img {
+      max-width: 420px;
+    }
+  }
+  .rodape {
+    background-color: #FED1F2;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #1c1c1c;
+  }
+  @media (max-width: 768px) {
+  
+    /* Ajuste para todos os containers */
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /* Hero Section (texto e imagem empilhados) */
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-texto,
+    .hero-imagem {
+      width: 100%;
+    }
+  
+    /* Sobre mim */
+    .sobre .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    /* Cards de Skills */
+    .cards-skills {
+      flex-direction: column;
+    }
+  
+    .card-skill {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    /* Projetos */
+    .cards-projetos {
+      flex-direction: column;
+    }
+  
+    .card-projeto {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    /* Formulário de Contato */
+    .contato-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .formulario,
+    .foto-contato {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .foto-contato img {
+      width: 80%;
+      height: auto;
+      margin-top: 2rem;
+    }
+  
+    /* Menu */
+    .menu ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .btn-contato {
+      margin-top: 1rem;
+    }
+  }
+
+  
+  
